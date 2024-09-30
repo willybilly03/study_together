@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    font-weight: bold;
+}
+
+.timer {
+    font-size: 6em;
+    margin-bottom: 20px;
+}
+
+#bull-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+#bull {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s;
+}
+
+.cas-container {
+    width: 100%;
+    height: 200px;  
+    /*padding-top: px;*/
+
+}
+
+.cas {
+    width: auto;
+    height: 100%;
+    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c00;
+}
+
+.shaking {
+    animation: shake 0.2s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
+
+#bull.slow {
+    animation-duration: 1s;
+}
+
+#bull.medium {
+    animation-duration: 0.5s;
+}
+
+#bull.fast {
+    animation-duration: 0.2s;
+}
